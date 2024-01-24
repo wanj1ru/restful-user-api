@@ -1,2 +1,5 @@
-[InternetShortcut]
-URL=https://github.com/apogiatzis/restful-user-api-django-drf/blob/master/api/apps.py
+from django.apps import AppConfig
+
+
+class ApiConfig(AppConfig):
+    name = 'api'
