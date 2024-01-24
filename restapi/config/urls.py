@@ -1,2 +1,8 @@
-[InternetShortcut]
-URL=https://github.com/apogiatzis/restful-user-api-django-drf/blob/master/config/urls.py
+from django.conf.urls import include, url
+from django.contrib import admin
+
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'^api/', include('api.urls')),
+]
